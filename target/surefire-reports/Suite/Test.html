@@ -1,0 +1,389 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>62/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 17 10:58:08 CST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (48 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 头等舱, 中国, 中国, 39, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 公务舱, 中国, 中国, 29, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 19, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 占座婴儿, 明珠经济舱, 中国, 中国, 9, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 中国, 中国, 59, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 头等舱, 中国, 中国, 49, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 留学生, 头等舱, 中国, 中国, 39, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 头等舱, 中国, 中国, 41, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 公务舱, 中国, 中国, 31, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 21, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 占座婴儿, 明珠经济舱, 中国, 中国, 11, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 不占座婴儿, 明珠经济舱, 中国, 中国, 11, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 19, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 占座婴儿, 明珠经济舱, 中国, 中国, 9, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 中国, 中国, 59, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 头等舱, 中国, 中国, 49, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 留学生, 头等舱, 中国, 中国, 39, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 头等舱, 中国, 中国, 41, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 公务舱, 中国, 中国, 31, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 21, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 头等舱, 中国, 中国, 41, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 公务舱, 中国, 中国, 31, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 21, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 占座婴儿, 明珠经济舱, 中国, 中国, 11, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 不占座婴儿, 明珠经济舱, 中国, 中国, 11, 50, 50, 57, 500, 7.5</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 儿童, 明珠经济舱, 中国, 中国, 19, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 占座婴儿, 明珠经济舱, 中国, 中国, 9, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 中国, 中国, 59, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 中西亚, 中国, 42, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f()'><b>f</b><br>Test class: NewTest<br>Parameters: 成人, 明珠经济舱, 中西亚, 中国, 33, 50, 50, 57, 500, 3000.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 成人, 头等舱, 美洲, 中国, 31, 50, 50, 57, 31, 50, 50, 57, 31, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 美洲, 中国, 51, 50, 50, 57, 51, 50, 50, 57, 51, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 头等舱, 美洲, 中国, 41, 50, 50, 57, 41, 50, 50, 57, 41, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 成人, 头等舱, 中西亚, 中国, 46, 50, 50, 57, 46, 50, 50, 57, 46, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 内罗毕, 中国, 66, -2, 50, 57, 66, 50, 50, 57, 66, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 22, 44, 50, 57, 22, 50, 50, 57, 22, 50, 50, 57, 500, 1000.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 韩国, 中国, 66, -2, 50, 57, 66, 50, 50, 57, 66, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 头等舱, 美洲, 中国, 41, 50, 50, 57, 41, 50, 50, 57, 41, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 成人, 头等舱, 中西亚, 中国, 46, 50, 50, 57, 46, 50, 50, 57, 46, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 内罗毕, 中国, 66, -2, 50, 57, 66, 50, 50, 57, 66, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 成人, 头等舱, 中西亚, 中国, 46, 50, 50, 57, 46, 50, 50, 57, 46, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 内罗毕, 中国, 66, -2, 50, 57, 66, 50, 50, 57, 66, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 22, 44, 50, 57, 22, 50, 50, 57, 22, 50, 50, 57, 500, 1000.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 头等舱, 韩国, 中国, 66, -2, 50, 57, 66, 50, 50, 57, 66, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f2()'><b>f2</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 头等舱, 美洲, 中国, 41, 50, 50, 57, 41, 50, 50, 57, 41, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 成人, 头等舱, 美洲, 中国, 22, 50, 50, 57, 22, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 美洲, 中国, 42, 50, 50, 57, 42, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 明珠经济舱, 美洲, 中国, 32, 50, 50, 57, 32, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 成人, 明珠经济舱, 中西亚, 中国, -1, 50, 50, 57, 33, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 53, -2, 50, 57, 53, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 韩国, 中国, 22, 44, 50, 57, 22, 50, 50, 57, 500, 450.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 明珠经济舱, 美洲, 中国, 32, 50, 50, 57, 32, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 成人, 明珠经济舱, 中西亚, 中国, -1, 50, 50, 57, 33, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 53, -2, 50, 57, 53, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 明珠经济舱, 美洲, 中国, 32, 50, 50, 57, 32, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 成人, 明珠经济舱, 中西亚, 中国, -1, 50, 50, 57, 33, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 53, -2, 50, 57, 53, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 韩国, 中国, 22, 44, 50, 57, 22, 50, 50, 57, 500, 450.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 韩国, 中国, 22, 44, 50, 57, 22, 50, 50, 57, 500, 450.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠银卡会员, 明珠经济舱, 美洲, 中国, 32, 50, 50, 57, 32, 50, 50, 57, 500, 0.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 成人, 明珠经济舱, 中西亚, 中国, -1, 50, 50, 57, 33, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+<tr>
+<td title='NewTest.f3()'><b>f3</b><br>Test class: NewTest<br>Parameters: 南航明珠金卡会员, 明珠经济舱, 内罗毕, 中国, 53, -2, 50, 57, 53, 50, 50, 57, 500, -1.0</td>
+<td></td>
+<td>0</td>
+<td>NewTest@381cad29</td></tr>
+</table><p>
+</body>
+</html>

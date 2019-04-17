@@ -1,0 +1,1222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">62</td><td class="numi">62</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="62">NewTest</td><td><a href="#m1"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m2"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m3"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m4"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m5"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m6"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m7"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m8"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m9"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m10"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m11"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m12"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m13"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m14"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m15"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m16"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m17"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m18"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m19"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m20"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m21"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m22"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m23"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m24"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m25"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m26"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m27"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m28"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m29"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m30"><b>f</b>  </a></td><td class="numi">30</td><td>1555469888536</td><td class="numi">27</td></tr><tr class="passedodd"><td><a href="#m31"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m32"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m33"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m34"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m35"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m36"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m37"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m38"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m39"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m40"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m41"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m42"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m43"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m44"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m45"><b>f2</b>  </a></td><td class="numi">15</td><td>1555469888564</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m46"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m47"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m48"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m49"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m50"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m51"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m52"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m53"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m54"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m55"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m56"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m57"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m58"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m59"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m60"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m61"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr><tr class="passedodd"><td><a href="#m62"><b>f3</b>  </a></td><td class="numi">17</td><td>1555469888568</td><td class="numi">4</td></tr>
+</table>
+<h1>Test</h1>
+<h2 id="m1">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>11</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>51</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>51</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>51</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>59</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>49</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>韩国</td>
+<td>中国</td>
+<td>66</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>22</td>
+<td>44</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>1000.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>66</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>公务舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>9</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>59</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>-1</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>33</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>头等舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>韩国</td>
+<td>中国</td>
+<td>22</td>
+<td>44</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>450.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>-1</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>33</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>19</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>韩国</td>
+<td>中国</td>
+<td>22</td>
+<td>44</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>450.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>留学生</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>39</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>22</td>
+<td>44</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>1000.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>66</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>公务舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>53</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>53</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>11</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>明珠经济舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>不占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>11</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>-1</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>33</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>头等舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>21</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>42</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>39</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>19</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>明珠经济舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>59</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>53</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>53</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>公务舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>29</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>韩国</td>
+<td>中国</td>
+<td>66</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>33</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>3000.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>53</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>53</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>21</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>不占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>11</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>头等舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>46</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>明珠经济舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>53</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>53</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m49">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>留学生</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>39</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>头等舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>49</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>头等舱</td>
+<td>内罗毕</td>
+<td>中国</td>
+<td>66</td>
+<td>-2</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>66</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>42</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>42</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>21</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>明珠经济舱</td>
+<td>中西亚</td>
+<td>中国</td>
+<td>-1</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>33</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>-1.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>41</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>9</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">NewTest:f2</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th><th>Parameter #17</th><th>Parameter #18</th></tr>
+<tr class="param stripe"><td>成人</td>
+<td>头等舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠银卡会员</td>
+<td>明珠经济舱</td>
+<td>美洲</td>
+<td>中国</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>32</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>占座婴儿</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>9</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>明珠经济舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>19</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>0.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m61">NewTest:f</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th></tr>
+<tr class="param stripe"><td>儿童</td>
+<td>公务舱</td>
+<td>中国</td>
+<td>中国</td>
+<td>31</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>7.5</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">NewTest:f3</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th></tr>
+<tr class="param stripe"><td>南航明珠金卡会员</td>
+<td>明珠经济舱</td>
+<td>韩国</td>
+<td>中国</td>
+<td>22</td>
+<td>44</td>
+<td>50</td>
+<td>57</td>
+<td>22</td>
+<td>50</td>
+<td>50</td>
+<td>57</td>
+<td>500</td>
+<td>450.0</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
